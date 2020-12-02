@@ -1,0 +1,41 @@
+/*  Section 2  Merits =======================*/
+
+.merits {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  .merits-list {
+    display: flex;
+
+    li:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    .merits-list-item {
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 120px;
+        background-color: $merits-img-background-color;
+
+        margin-bottom: 30px;
+      }
+      h3 {
+        @include fonts($font, normal, 14px, bold, 0.03em);
+        text-transform: uppercase;
+        color: rgb(33, 33, 33);
+
+        margin-bottom: 10px;
+      }
+      p {
+        @include fonts($font, normal, 14px, normal, 0.03em);
+        line-height: 24px;
+
+        color: $description-text-color;
+      }
+    }
+  }
+}

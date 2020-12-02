@@ -1,0 +1,60 @@
+/* HEADER =====================================*/
+header {
+  border: 1px solid #ececec;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* contacts ==================================== */
+.header-address {
+  margin-left: auto;
+
+  ul {
+    display: flex;
+    align-items: center;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include fonts($font, normal, 14px, 500, 0.02em);
+        color: $header-menu-address-color;
+
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .header-address-list-email-img {
+        fill: $header-menu-address-color;
+        margin-right: 10px;
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .header-address-list-email-link:hover .header-address-list-email-img,
+      .header-address-list-email-link:focus .header-address-list-email-img {
+        fill: $accent-color;
+      }
+
+      .header-address-list-tel-img {
+        fill: $header-menu-address-color;
+        margin-right: 10px;
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .header-address-list-tel-link:hover .header-address-list-tel-img,
+      .header-address-list-tel-link:focus .header-address-list-tel-img {
+        fill: $accent-color;
+      }
+    }
+  }
+}

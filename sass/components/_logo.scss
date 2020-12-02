@@ -1,0 +1,32 @@
+/* Header logo ============== */
+.logo {
+  display: flex;
+  align-items: center;
+
+  @include fonts($logo-text, normal, 26px, bold, 0.03em);
+  text-transform: capitalize;
+  color: $logo-color-1;
+
+  margin-right: 85px;
+
+  .logo-text {
+    @include fonts($logo-text, normal, 26px, bold, 0.03em);
+    text-transform: capitalize;
+    color: $logo-color-3;
+  }
+}
+
+/* Footer logo ==================*/
+footer .logo-link {
+  display: flex;
+
+  margin-bottom: 20px;
+
+  @include fonts($logo-text, normal, 26px, bold, 0.03em);
+  text-transform: capitalize;
+  color: $logo-color-2;
+
+  span {
+    color: $logo-color-3;
+  }
+}

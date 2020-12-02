@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  @include fonts($font, normal, 16px, 500, 0.03em);
+
+  color: $font-color;
+  background-color: $background-color;
+}
+
+img {
+  display: block;
+}
+
+/* CLASSES =========== */
+.hover:hover,
+.focus:focus {
+  color: $accent-color;
+}
+.link {
+  display: block;
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.img {
+  display: block;
+}
+
+.title {
+  text-align: center;
+
+  @include fonts($font, normal, 36px, bold, 0.03em);
+
+  color: $title-color;
+}

@@ -1,0 +1,120 @@
+/* Form ============================= */
+/* Form items =========================================== */
+.form__items {
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Form item */
+  .form__item {
+    position: relative;
+    margin-bottom: 10px;
+
+    .form__item-label {
+      display: block;
+
+      @include fonts($font, normal, 12px, normal, 0.01em);
+      color: rgb(117, 117, 117);
+
+      margin-bottom: 4px;
+    }
+    /* Form Inputs  ========================== */
+    .form__item-input {
+      display: block;
+      z-index: 1;
+      box-sizing: border-box;
+
+      width: 448px;
+      height: 40px;
+      padding-left: 42px;
+      padding-right: 16px;
+
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      &:focus,
+      &:hover {
+        outline: none;
+        border-color: $accent-color;
+      }
+    }
+
+    /* Inputs icons ================================= */
+    .form__item-input:focus + .form__item-input-svg,
+    .form__item-input:hover + .form__item-input-svg {
+      fill: $accent-color;
+    }
+    .form__item-input-svg {
+      position: absolute;
+      z-index: 100;
+
+      top: 50%;
+      left: 12px;
+
+      width: 18px;
+      height: 18px;
+    }
+    /* Form message ========================================== */
+    .form__message {
+      @include fonts($font, normal, 14px, normal, 0.01em);
+
+      width: 448px;
+      height: 120px;
+      padding: 12px 16px;
+      margin-bottom: 20px;
+
+      box-sizing: border-box;
+      resize: none;
+    }
+
+    /* Form Agreements  ==============================*/
+    .form__agreement-label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row-reverse;
+
+      margin-bottom: 30px;
+
+      @include fonts($font, normal, 14px, normal, 0.03em);
+      color: rgb(117, 117, 117);
+
+      a {
+        margin-left: 3px;
+
+        @include fonts($font, normal, 14px, normal, 0.03em);
+        color: rgb(33, 150, 243);
+        text-decoration: underline;
+      }
+    }
+
+    /* Form castom-checkbox  */
+    .form__castom-checkbox {
+      margin-right: 7px;
+      width: 16px;
+      height: 15px;
+      border: 2px solid rgb(33, 33, 33);
+      border-radius: 4px;
+      fill: rgb(255, 255, 255);
+      background-color: $background-color;
+      transition-property: background-color, border-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      svg {
+        display: block;
+      }
+    }
+
+    .form-input-check:checked ~ .form__castom-checkbox {
+      background-color: $accent-color;
+      border-color: $accent-color;
+    }
+
+    .hidden-form-checkbox {
+      display: none;
+    }
+  }
+}
