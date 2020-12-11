@@ -229,12 +229,6 @@ header .container {
   text-align: center;
 }
 
-@media (min-width: 480px) {
-  .merits .merits-list li h3 {
-    text-align: left;
-  }
-}
-
 .merits .merits-list li p {
   font-family: "Roboto";
   font-style: normal;
@@ -257,6 +251,9 @@ header .container {
   .merits .merits-list li:nth-child(2n + 1) {
     margin-right: 30px;
   }
+  .merits .merits-list li h3 {
+    text-align: left;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -269,6 +266,9 @@ header .container {
   }
   .merits .merits-list li:not(:last-child) {
     margin-right: 30px;
+  }
+  .merits .merits-list li h3 {
+    text-align: left;
   }
 }
 

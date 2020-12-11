@@ -23,15 +23,10 @@
         color: rgb(33, 33, 33);
         margin-bottom: 10px;
         text-align: center;
-
-        @include for-size(mobile) {
-          text-align: left;
-        }
       }
       p {
         @include fonts($font, normal, 14px, normal, 0.03em);
         line-height: 24px;
-
         color: $description-text-color;
       }
     }
@@ -47,17 +42,26 @@
         &:nth-child(2n + 1) {
           margin-right: 30px;
         }
+
+        h3 {
+          text-align: left;
+        }
       }
     }
 
     @include for-size(desktop) {
       flex-wrap: nowrap;
+
       li {
         width: calc((100% - 30px) / 4);
         padding-bottom: 3px;
 
         &:not(:last-child) {
           margin-right: 30px;
+        }
+
+        h3 {
+          text-align: left;
         }
       }
     }
