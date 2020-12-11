@@ -273,47 +273,49 @@ header .container {
 }
 
 /* doings  ===================================*/
-.doings {
-  padding-bottom: 94px;
-  /* doings list ===================================*/
+@media screen and (max-width: 1200px) {
+  .doings {
+    display: none;
+  }
 }
 
-.doings .title {
-  margin-bottom: 50px;
-}
-
-.doings .doings-list {
-  justify-content: center;
-}
-
-.doings .doings-list li {
-  position: relative;
-}
-
-.doings .doings-list li:not(:last-child) {
-  margin-right: 30px;
-}
-
-.doings .doings-list img {
-  width: 370px;
-}
-
-.doings .doings-list h3 {
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 70px;
-  background-color: rgba(47, 48, 58, 0.8);
-  font-family: "Roboto";
-  font-style: normal;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: white;
+@media (min-width: 1200px) {
+  .doings {
+    padding-bottom: 94px;
+  }
+  .doings .title {
+    margin-bottom: 50px;
+  }
+  .doings .doings-list {
+    display: flex;
+    justify-content: center;
+  }
+  .doings .doings-list li {
+    position: relative;
+  }
+  .doings .doings-list li:not(:last-child) {
+    margin-right: 30px;
+  }
+  .doings .doings-list img {
+    width: 370px;
+  }
+  .doings .doings-list h3 {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: white;
+  }
 }
 
 .team {
