@@ -9,6 +9,16 @@
 /* footer */
 /* portfolio */
 /* hover + focus */
+.my-box {
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .my-box {
+    padding: 20px;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -75,10 +85,29 @@ section {
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 /* HEADER =====================================*/

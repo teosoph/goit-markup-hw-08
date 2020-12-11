@@ -5,14 +5,8 @@
   padding-bottom: 94px;
 
   .merits-list {
-    display: flex;
-
-    li:not(:last-child) {
-      margin-right: 30px;
-    }
-
-    .merits-list-item {
-      div {
+    li {
+      .list__icon-box {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -27,14 +21,44 @@
         @include fonts($font, normal, 14px, bold, 0.03em);
         text-transform: uppercase;
         color: rgb(33, 33, 33);
-
         margin-bottom: 10px;
+        text-align: center;
+
+        @include for-size(mobile) {
+          text-align: left;
+        }
       }
       p {
         @include fonts($font, normal, 14px, normal, 0.03em);
         line-height: 24px;
 
         color: $description-text-color;
+      }
+    }
+
+    @include for-size(tablet) {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        flex-basis: calc((100% - 30px) / 2);
+        margin-bottom: 30px;
+
+        &:nth-child(2n + 1) {
+          margin-right: 30px;
+        }
+      }
+    }
+
+    @include for-size(desktop) {
+      flex-wrap: nowrap;
+      li {
+        width: calc((100% - 30px) / 4);
+        padding-bottom: 3px;
+
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
       }
     }
   }

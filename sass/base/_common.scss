@@ -16,7 +16,6 @@ html {
 
 body {
   @include fonts($font, normal, 16px, 500, 0.03em);
-
   color: $font-color;
   background-color: $background-color;
 }
@@ -50,4 +49,8 @@ img {
   @include fonts($font, normal, 36px, bold, 0.03em);
 
   color: $title-color;
+}
+
+.flexbox {
+  // display: flex;
 }

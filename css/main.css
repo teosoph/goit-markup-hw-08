@@ -9,6 +9,16 @@
 /* footer */
 /* portfolio */
 /* hover + focus */
+.my-box {
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .my-box {
+    padding: 20px;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -75,10 +85,29 @@ section {
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 /* HEADER =====================================*/
@@ -178,15 +207,7 @@ header .container {
   padding-bottom: 94px;
 }
 
-.merits .merits-list {
-  display: flex;
-}
-
-.merits .merits-list li:not(:last-child) {
-  margin-right: 30px;
-}
-
-.merits .merits-list .merits-list-item div {
+.merits .merits-list li .list__icon-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -196,7 +217,7 @@ header .container {
   margin-bottom: 30px;
 }
 
-.merits .merits-list .merits-list-item h3 {
+.merits .merits-list li h3 {
   font-family: "Roboto";
   font-style: normal;
   font-size: 14px;
@@ -205,9 +226,16 @@ header .container {
   text-transform: uppercase;
   color: #212121;
   margin-bottom: 10px;
+  text-align: center;
 }
 
-.merits .merits-list .merits-list-item p {
+@media (min-width: 480px) {
+  .merits .merits-list li h3 {
+    text-align: left;
+  }
+}
+
+.merits .merits-list li p {
   font-family: "Roboto";
   font-style: normal;
   font-size: 14px;
@@ -215,6 +243,33 @@ header .container {
   letter-spacing: 0.03em;
   line-height: 24px;
   color: #757575;
+}
+
+@media (min-width: 768px) {
+  .merits .merits-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .merits .merits-list li {
+    flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
+  }
+  .merits .merits-list li:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .merits .merits-list {
+    flex-wrap: nowrap;
+  }
+  .merits .merits-list li {
+    width: calc((100% - 30px) / 4);
+    padding-bottom: 3px;
+  }
+  .merits .merits-list li:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 /* doings  ===================================*/
@@ -228,7 +283,6 @@ header .container {
 }
 
 .doings .doings-list {
-  display: flex;
   justify-content: center;
 }
 
