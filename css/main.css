@@ -377,6 +377,27 @@ header .container {
   margin-bottom: 16px;
 }
 
+@media (min-width: 1200px) {
+  .team .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .team .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 480px) {
+  .team .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 /* Clients section ===============================*/
 .clients {
   padding-top: 94px;
