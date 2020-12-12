@@ -1,19 +1,21 @@
 /* Footer ========================================*/
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  // height: 252px;
-  // margin-left: auto;
-  // margin-right: auto;
-
   background: rgb(47, 48, 58);
 
   .container {
+    padding-top: 60px;
+    text-align: center;
+
     /* Footer logo-contacts ============= */
     .footer__logo-contacts {
-      margin-right: 70px;
+      display: inline-block;
+
+      outline: 2px solid #0a66b1;
+
+      /* logo ==================*/
+      .logo-link {
+        justify-content: center;
+      }
 
       /* footer contacts ==================*/
       .footer__contacts-address {
@@ -30,20 +32,29 @@ footer {
         @include fonts($font, normal, 14px, normal, 0.03em);
         color: $footer__address-text-color;
       }
+
+      margin-bottom: 60px;
     }
 
     /* Footer connections */
-    .footer__connections p {
-      display: block;
-      margin-bottom: 20px;
+    .footer__connections {
+      outline: 2px solid #bd9b07;
+      p {
+        display: block;
+        margin-bottom: 20px;
 
-      @include fonts($font, normal, 14px, bold, 0.03em);
-      text-transform: uppercase;
-      color: $footer__conection-text-color;
+        @include fonts($font, normal, 14px, bold, 0.03em);
+        text-transform: uppercase;
+        color: $footer__conection-text-color;
+      }
+
+      margin-bottom: 60px;
     }
 
     /* Footer subscription ===================  */
     .footer__subscription {
+      outline: 2px solid #c02929;
+
       .footer__subscription-title {
         @include fonts($font, normal, 14px, bold, 0.03em);
         text-transform: uppercase;
@@ -51,14 +62,14 @@ footer {
 
         margin-bottom: 20px;
       }
-      // .footer__subscription-form {
-      //   // display: flex;
-      // }
+      .footer__subscription-form {
+        vertical-align: middle;
+      }
       .footer__contact-form-section {
         padding: 0;
       }
       input {
-        width: 358px;
+        width: 450px;
         height: 50px;
 
         color: rgb(255, 255, 255);
@@ -67,7 +78,7 @@ footer {
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
 
-        margin-right: 12px;
+        margin-bottom: 20px;
         padding-left: 10px;
       }
     }
@@ -78,7 +89,34 @@ footer {
     @include for-size(desktop) {
       display: flex;
       align-items: center;
-      justify-content: start;
+      justify-content: left;
+
+      height: 252px;
+      padding-top: 0;
+      margin-left: auto;
+      margin-right: auto;
+
+      .footer__logo-contacts {
+        .logo-link {
+          justify-content: left;
+        }
+
+        text-align: left;
+        margin-right: 70px;
+      }
+      .footer__subscription-form {
+        display: flex;
+      }
+      .footer__connections-socials {
+        margin-right: 94px;
+      }
+
+      input {
+        width: 358px;
+
+        margin-right: 12px;
+        padding-left: 10px;
+      }
     }
   }
 }

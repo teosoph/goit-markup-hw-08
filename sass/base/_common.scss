@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
 
-  outline: 2px solid red;
+  // outline: 2px solid red;
 
   &::before,
   &::after {
@@ -23,15 +23,15 @@ body {
 img {
   display: block;
 
-  outline: 2px solid #02457c;
+  // outline: 2px solid #02457c;
 }
 
 ul {
-  outline: 2px solid #bd9b07;
+  // outline: 2px solid #bd9b07;
 }
 
 li {
-  outline: 2px solid #000000;
+  // outline: 2px solid #000000;
 }
 
 /* CLASSES =========== */
@@ -61,6 +61,6 @@ li {
   color: $title-color;
 }
 
-// .flexbox {
-//   // display: flex;
-// }
+.flexbox {
+  // display: flex;
+}
