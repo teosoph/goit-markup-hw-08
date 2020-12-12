@@ -468,24 +468,35 @@ header .container {
 }
 
 @media (min-width: 768px) {
-  .clients .clients-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .clients .clients-list:nth-child(2n + 1) {
+  .clients .clients-list li:nth-child(2n + 1) {
     margin-right: 30px;
   }
-  .clients .clients-list:nth-child(n + 2) {
+  .clients .clients-list li:nth-child(n + 3) {
     margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .clients .clients-list {
+    display: flex;
+    justify-content: center;
+  }
+  .clients .clients-list li {
+    width: 226px;
+  }
+  .clients .clients-list li:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
 @media (min-width: 1200px) {
   .clients .clients-list {
     display: flex;
-    flex-wrap: wrap;
   }
-  .clients .clients-list:not(:last-child) {
+  .clients .clients-list li {
+    width: 170px;
+  }
+  .clients .clients-list li:not(:last-child) {
     margin-right: 30px;
   }
 }
