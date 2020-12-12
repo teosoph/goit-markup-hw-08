@@ -79,6 +79,9 @@
     @include for-size(desktop) {
       flex-wrap: nowrap;
 
+      li:nth-child(-n + 4) {
+        margin-bottom: 0;
+      }
       li:not(:last-child) {
         margin-right: 30px;
       }

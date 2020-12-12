@@ -495,6 +495,9 @@ header .container {
   .clients .clients-list {
     flex-wrap: nowrap;
   }
+  .clients .clients-list li:nth-child(-n + 4) {
+    margin-bottom: 0;
+  }
   .clients .clients-list li:not(:last-child) {
     margin-right: 30px;
   }
