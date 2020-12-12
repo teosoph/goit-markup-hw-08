@@ -431,7 +431,6 @@ header .container {
 .clients .clients-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .clients .clients-list li a {
@@ -479,7 +478,6 @@ header .container {
 @media (min-width: 768px) {
   .clients .clients-list {
     display: flex;
-    justify-content: center;
   }
   .clients .clients-list li {
     width: 226px;
