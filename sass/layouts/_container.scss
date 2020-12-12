@@ -5,6 +5,8 @@
   padding-left: 15px;
   padding-right: 15px;
 
+  outline: 2px solid green;
+
   @include for-size(mobile) {
     width: 480px;
   }
