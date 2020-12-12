@@ -52,6 +52,10 @@ ul {
   outline: 2px solid #bd9b07;
 }
 
+li {
+  outline: 2px solid #000000;
+}
+
 /* CLASSES =========== */
 .hover:hover,
 .focus:focus {
@@ -276,27 +280,21 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 252px;
-  margin-left: auto;
-  margin-right: auto;
   background: #2f303a;
 }
 
 footer .container {
-  display: flex;
-  align-items: center;
-  justify-content: start;
   /* Footer logo-contacts ============= */
-  /* footer contacts ==================*/
   /* Footer connections */
   /* Footer subscription ===================  */
 }
 
 footer .container .footer__logo-contacts {
   margin-right: 70px;
+  /* footer contacts ==================*/
 }
 
-footer .container .footer__contacts-address {
+footer .container .footer__logo-contacts .footer__contacts-address {
   font-family: "Roboto";
   font-style: normal;
   font-size: 14px;
@@ -306,12 +304,12 @@ footer .container .footer__contacts-address {
   margin-bottom: 9px;
 }
 
-footer .container .footer__contacts-list li:not(:last-child) {
+footer .container .footer__logo-contacts .footer__contacts-list li:not(:last-child) {
   margin-bottom: 9px;
 }
 
-footer .container .footer__contacts-list-email,
-footer .container .footer__contacts-list-tel {
+footer .container .footer__logo-contacts .footer__contacts-list-email,
+footer .container .footer__logo-contacts .footer__contacts-list-tel {
   font-family: "Roboto";
   font-style: normal;
   font-size: 14px;
@@ -332,7 +330,7 @@ footer .container .footer__connections p {
   color: white;
 }
 
-footer .container .footer__subscription-title {
+footer .container .footer__subscription .footer__subscription-title {
   font-family: "Roboto";
   font-style: normal;
   font-size: 14px;
@@ -343,11 +341,7 @@ footer .container .footer__subscription-title {
   margin-bottom: 20px;
 }
 
-footer .container .footer__subscription-form {
-  display: flex;
-}
-
-footer .container .footer__contact-form-section {
+footer .container .footer__subscription .footer__contact-form-section {
   padding: 0;
 }
 
@@ -361,6 +355,14 @@ footer .container .footer__subscription input {
   border-radius: 4px;
   margin-right: 12px;
   padding-left: 10px;
+}
+
+@media (min-width: 1200px) {
+  footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
 }
 
 .hero-button {

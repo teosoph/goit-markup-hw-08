@@ -30,6 +30,10 @@ ul {
   outline: 2px solid #bd9b07;
 }
 
+li {
+  outline: 2px solid #000000;
+}
+
 /* CLASSES =========== */
 .hover:hover,
 .focus:focus {
@@ -57,6 +61,6 @@ ul {
   color: $title-color;
 }
 
-.flexbox {
-  // display: flex;
-}
+// .flexbox {
+//   // display: flex;
+// }
