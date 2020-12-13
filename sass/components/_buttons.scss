@@ -1,3 +1,53 @@
+//*  Header button  ========================*/
+
+.header___menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+
+  @include for-size(tablet-without) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @include for-size(tablet) {
+    display: none;
+  }
+
+  &.is-open .menu__icon-close {
+    display: block;
+  }
+
+  &.is-open .menu__icon-open {
+    display: none;
+  }
+}
+
+.menu__icon-close {
+  display: none;
+}
+
+.header___menu-button-image {
+  width: 24px;
+  height: 16px;
+
+  fill: $secondary-text-color;
+
+  transition-property: fill;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+
+  @include for-size(tablet) {
+    display: none;
+  }
+  &:hover,
+  :focus {
+    fill: $accent-color;
+    cursor: pointer;
+  }
+}
+
 //*  Hero button  ========================*/
 .hero-button {
   position: absolute;
