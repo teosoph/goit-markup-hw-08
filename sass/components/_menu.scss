@@ -1,16 +1,6 @@
 /* header navigation menu ======================  */
-.header-navigation {
-  display: flex;
-  align-items: center;
-}
+
 .header-navigation-list {
-  display: flex;
-  align-items: center;
-
-  li:not(:last-child) {
-    margin-right: 40px;
-  }
-
   a {
     @include fonts($font, normal, 14px, 500, 0.02em);
     color: $header-menu-title-color;
@@ -24,7 +14,14 @@
   display: flex;
   align-items: center;
 
-  height: 80px;
+  height: 50px;
+
+  @include for-size(tablet) {
+    height: 80px;
+  }
+  @include for-size(desktop) {
+    height: 80px;
+  }
 }
 .active-page a.current {
   color: $accent-color;
