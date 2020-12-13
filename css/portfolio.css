@@ -105,6 +105,7 @@ header .container {
   display: flex;
   justify-content: space-between;
   height: 60px;
+  position: relative;
   /* navigation ==================================== */
   /* contacts ==================================== */
 }
@@ -290,6 +291,7 @@ footer {
 }
 
 footer .container {
+  height: 603px;
   padding-top: 60px;
   text-align: center;
   /* Footer logo-contacts ============= */
@@ -300,7 +302,6 @@ footer .container {
 footer .container .footer__logo-contacts {
   display: inline-block;
   margin-bottom: 60px;
-  outline: 2px solid #0a66b1;
   /* logo ==================*/
   /* footer contacts ==================*/
 }
@@ -335,11 +336,9 @@ footer .container .footer__logo-contacts .footer__contacts-list-tel {
 
 footer .container .footer__connections {
   margin-bottom: 60px;
-  outline: 2px solid #bd9b07;
 }
 
 footer .container .footer__connections p {
-  display: block;
   margin-bottom: 20px;
   font-family: "Roboto";
   font-style: normal;
@@ -348,10 +347,6 @@ footer .container .footer__connections p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: white;
-}
-
-footer .container .footer__subscription {
-  outline: 2px solid #c02929;
 }
 
 footer .container .footer__subscription .footer__subscription-title {
@@ -394,6 +389,9 @@ footer .container .footer__subscription input {
 }
 
 @media (min-width: 768px) {
+  footer .container {
+    height: 463px;
+  }
   footer .container .footer_tablet {
     display: flex;
     justify-content: space-between;
@@ -404,7 +402,6 @@ footer .container .footer__subscription input {
   footer .container {
     display: flex;
     align-items: center;
-    justify-content: left;
     height: 252px;
     padding-top: 0;
     margin-left: auto;
@@ -422,14 +419,22 @@ footer .container .footer__subscription input {
   footer .container .footer__logo-contacts .logo-link {
     justify-content: left;
   }
-  footer .container .footer__subscription-form {
-    display: flex;
-  }
   footer .container .footer__connections {
     margin-bottom: 0;
   }
+  footer .container .footer__connections p {
+    display: flex;
+    justify-content: start;
+  }
   footer .container .footer__connections .footer__connections-socials {
     margin-right: 94px;
+  }
+  footer .container .footer__subscription p {
+    display: flex;
+    justify-content: start;
+  }
+  footer .container .footer__subscription .footer__subscription-form {
+    display: flex;
   }
 }
 

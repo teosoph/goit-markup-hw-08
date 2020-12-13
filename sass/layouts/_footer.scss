@@ -3,6 +3,7 @@ footer {
   background: rgb(47, 48, 58);
 
   .container {
+    height: 603px;
     padding-top: 60px;
     text-align: center;
 
@@ -10,8 +11,6 @@ footer {
     .footer__logo-contacts {
       display: inline-block;
       margin-bottom: 60px;
-
-      outline: 2px solid #0a66b1;
 
       /* logo ==================*/
       .logo-link {
@@ -39,9 +38,7 @@ footer {
     .footer__connections {
       margin-bottom: 60px;
 
-      outline: 2px solid #bd9b07;
       p {
-        display: block;
         margin-bottom: 20px;
 
         @include fonts($font, normal, 14px, bold, 0.03em);
@@ -52,8 +49,6 @@ footer {
 
     /* Footer subscription ===================  */
     .footer__subscription {
-      outline: 2px solid #c02929;
-
       .footer__subscription-title {
         @include fonts($font, normal, 14px, bold, 0.03em);
         text-transform: uppercase;
@@ -90,6 +85,8 @@ footer {
     }
 
     @include for-size(tablet) {
+      height: 463px;
+
       .footer_tablet {
         display: flex;
         justify-content: space-between;
@@ -99,7 +96,6 @@ footer {
     @include for-size(desktop) {
       display: flex;
       align-items: center;
-      justify-content: left;
 
       height: 252px;
       padding-top: 0;
@@ -119,14 +115,23 @@ footer {
         margin-right: 70px;
         margin-bottom: 0;
       }
-      .footer__subscription-form {
-        display: flex;
-      }
       .footer__connections {
         margin-bottom: 0;
-
+        p {
+          display: flex;
+          justify-content: start;
+        }
         .footer__connections-socials {
           margin-right: 94px;
+        }
+      }
+      .footer__subscription {
+        p {
+          display: flex;
+          justify-content: start;
+        }
+        .footer__subscription-form {
+          display: flex;
         }
       }
     }
