@@ -4,56 +4,87 @@ header {
 
   .container {
     display: flex;
-    align-items: center;
-  }
-}
+    height: 60px;
 
-/* contacts ==================================== */
-.header-address {
-  margin-left: auto;
+    /* navigation ==================================== */
+    .header-navigation {
+      display: none;
+    }
+    /* contacts ==================================== */
+    .header-address {
+      display: none;
+      margin-left: auto;
 
-  ul {
-    display: flex;
-    align-items: center;
+      .header-address-list {
+        li {
+          display: flex;
+          align-items: center;
 
-    li {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+          &:not(:last-child) {
+            margin-right: 30px;
+          }
 
-      &:not(:last-child) {
-        margin-right: 30px;
+          a {
+            display: flex;
+            align-items: center;
+
+            @include fonts($font, normal, 14px, 500, 0.02em);
+            color: $header-menu-address-color;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          }
+
+          .header-address-list-email-img,
+          .header-address-list-tel-img {
+            fill: $header-menu-address-color;
+            transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            margin-right: 10px;
+          }
+          .header-address-list-email-link:hover .header-address-list-email-img,
+          .header-address-list-email-link:focus .header-address-list-email-img,
+          .header-address-list-tel-link:hover .header-address-list-tel-img,
+          .header-address-list-tel-link:focus .header-address-list-tel-img {
+            fill: $accent-color;
+          }
+        }
+        .header-address-list__e-mail {
+          margin-bottom: 10px;
+
+          @include for-size(desktop) {
+            margin-bottom: 0;
+          }
+        }
       }
+    }
 
-      a {
+    @include for-size(tablet) {
+      height: 80px;
+
+      .header__menu-mobile {
         display: flex;
         align-items: center;
-        justify-content: center;
-
-        @include fonts($font, normal, 14px, 500, 0.02em);
-        color: $header-menu-address-color;
-
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
 
-      .header-address-list-email-img {
-        fill: $header-menu-address-color;
-        margin-right: 10px;
-        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      .header-navigation,
+      .header-address {
+        display: block;
       }
-      .header-address-list-email-link:hover .header-address-list-email-img,
-      .header-address-list-email-link:focus .header-address-list-email-img {
-        fill: $accent-color;
-      }
+    }
 
-      .header-address-list-tel-img {
-        fill: $header-menu-address-color;
-        margin-right: 10px;
-        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include for-size(desktop) {
+      height: 80px;
+
+      .header__menu-mobile {
+        display: inline-flex;
+        // align-items: center;
+        justify-content: space-between;
       }
-      .header-address-list-tel-link:hover .header-address-list-tel-img,
-      .header-address-list-tel-link:focus .header-address-list-tel-img {
-        fill: $accent-color;
+      .header-navigation,
+      .header-address {
+        display: block;
+      }
+      .header-address ul {
+        display: flex;
+        align-items: center;
       }
     }
   }

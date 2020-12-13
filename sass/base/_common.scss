@@ -5,9 +5,7 @@
   // outline: 2px solid red;
 }
 
-// html {
-//   box-sizing: border-box;
-// }
+
 
 body {
   @include fonts($font, normal, 16px, 500, 0.03em);
@@ -56,6 +54,4 @@ li {
   color: $title-color;
 }
 
-.flexbox {
-  // display: flex;
-}
+

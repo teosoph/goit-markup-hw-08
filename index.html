@@ -15,69 +15,70 @@
   <!-- BODY  ==================================================================-->
 
   <body>
-    <header hidden>
+    <header>
       <div class="container">
         <!-- logo -->
         <a class="logo link" href="./index.html" aria-label="Главная страница"
           ><span class="logo-text link hover">Web</span> Studio</a
         >
-
-        <!-- navigation -->
-        <nav class="header-navigation">
-          <ul class="header-navigation-list list">
-            <li class="active-page">
-              <a class="link hover focus current" href="index.html">Студия</a>
-            </li>
-            <li>
-              <a class="link hover focus menu-underline" href="portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="">
-              <a class="link hover focus menu-underline" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-
-        <!-- contacts -->
-        <address class="header-address">
-          <ul class="header-address-list list">
-            <!-- e-mail -->
-            <li>
-              <a
-                class="header-address-list-email-link link hover focus"
-                href="mailto:"
-                aria-label="e-mail icon"
-              >
-                <svg
-                  class="header-address-list-email-img"
-                  width="16"
-                  height="11.2"
+        <div class="header__menu-mobile" id="menu-mobile" data-menu>
+          <!-- navigation -->
+          <nav class="header-navigation">
+            <ul class="header-navigation-list list">
+              <li class="navigation-list__studio active-page">
+                <a class="link hover focus current" href="index.html">Студия</a>
+              </li>
+              <li class="navigation-list__portfolio">
+                <a class="link hover focus menu-underline" href="portfolio.html"
+                  >Портфолио</a
                 >
-                  <use href="./images/sprite.svg#e-mail"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <!-- telephone -->
-            <li>
-              <a
-                class="header-address-list-tel-link link hover focus"
-                href="tel:+380961111111"
-                aria-label="telephone icon"
-              >
-                <svg
-                  class="header-address-list-tel-img"
-                  width="10"
-                  height="14.94"
+              </li>
+              <li class="navigation-list__contacts">
+                <a class="link hover focus menu-underline" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- contacts -->
+          <address class="header-address">
+            <ul class="header-address-list list">
+              <!-- e-mail -->
+              <li class="header-address-list__e-mail">
+                <a
+                  class="header-address-list-email-link link hover focus"
+                  href="mailto:"
+                  aria-label="e-mail icon"
                 >
-                  <use href="./images/sprite.svg#telephone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-        </address>
+                  <svg
+                    class="header-address-list-email-img"
+                    width="16"
+                    height="11.2"
+                  >
+                    <use href="./images/sprite.svg#e-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <!-- telephone -->
+              <li class="header-address-list__telephone">
+                <a
+                  class="header-address-list-tel-link link hover focus"
+                  href="tel:+380961111111"
+                  aria-label="telephone icon"
+                >
+                  <svg
+                    class="header-address-list-tel-img"
+                    width="10"
+                    height="14.94"
+                  >
+                    <use href="./images/sprite.svg#telephone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
 
