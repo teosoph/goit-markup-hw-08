@@ -114,7 +114,6 @@ header .container .header-navigation {
 
 header .container .header-address {
   display: none;
-  margin-left: auto;
 }
 
 header .container .header-address .header-address-list li {
@@ -169,6 +168,7 @@ header .container .header-address .header-address-list .header-address-list__e-m
   header .container .header__menu-mobile {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   header .container .header-navigation,
   header .container .header-address {
@@ -181,8 +181,8 @@ header .container .header-address .header-address-list .header-address-list__e-m
     height: 80px;
   }
   header .container .header__menu-mobile {
-    display: inline-flex;
-    justify-content: space-between;
+    display: flex;
+    align-items: center;
   }
   header .container .header-navigation,
   header .container .header-address {

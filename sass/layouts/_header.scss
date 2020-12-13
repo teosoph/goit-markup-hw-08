@@ -13,7 +13,6 @@ header {
     /* contacts ==================================== */
     .header-address {
       display: none;
-      margin-left: auto;
 
       .header-address-list {
         li {
@@ -62,6 +61,7 @@ header {
       .header__menu-mobile {
         display: flex;
         align-items: center;
+        justify-content: space-between;
       }
 
       .header-navigation,
@@ -74,14 +74,14 @@ header {
       height: 80px;
 
       .header__menu-mobile {
-        display: inline-flex;
-        // align-items: center;
-        justify-content: space-between;
+        display: flex;
+        align-items: center;
       }
       .header-navigation,
       .header-address {
         display: block;
       }
+
       .header-address ul {
         display: flex;
         align-items: center;
