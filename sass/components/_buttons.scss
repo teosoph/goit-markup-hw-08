@@ -7,8 +7,8 @@
   background-color: transparent;
 
   @include for-size(tablet-without) {
-    width: 40px;
-    height: 40px;
+    // width: 40px;
+    // height: 40px;
   }
 
   @include for-size(tablet) {

@@ -439,13 +439,6 @@ footer .container .footer__subscription input {
   background-color: transparent;
 }
 
-@media (max-width: 767px) {
-  .header___menu-button {
-    width: 40px;
-    height: 40px;
-  }
-}
-
 @media (min-width: 768px) {
   .header___menu-button {
     display: none;
