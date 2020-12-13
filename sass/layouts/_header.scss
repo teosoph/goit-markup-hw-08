@@ -19,10 +19,6 @@ header {
           display: flex;
           align-items: center;
 
-          // &:not(:last-child) {
-          //   margin-right: 30px;
-          // }
-
           a {
             display: flex;
             align-items: center;
@@ -86,6 +82,10 @@ header {
       .header-address ul {
         display: flex;
         align-items: center;
+
+        .header-address-list__e-mail {
+          margin-right: 30px;
+        }
       }
     }
   }
