@@ -1,7 +1,7 @@
 //*  Hero button  ========================*/
 .hero-button {
   position: absolute;
-  top: 350px;
+  top: 232px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -25,6 +25,10 @@
   &:focus {
     background-color: $background-color;
     color: $accent-color;
+  }
+
+  @include for-size(desktop) {
+    top: 350px;
   }
 }
 

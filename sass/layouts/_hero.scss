@@ -1,9 +1,12 @@
 /* hero ==================================== */
 .hero-slider {
   position: relative;
+
   margin-left: auto;
   margin-right: auto;
-  height: 600px;
+  height: 400px;
+
+  text-align: center;
 
   background-image: linear-gradient(
       to bottom,
@@ -15,15 +18,27 @@
   background-repeat: no-repeat;
 
   .hero-title {
-    position: absolute;
-    top: 200px;
-    left: 50%;
-    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
 
-    text-align: center;
+    padding-top: 118px;
 
-    @include fonts($font, normal, 44px, 900, 0.06em);
+    @include fonts($font, normal, 26px, 900, 0.06em);
+    line-height: 42px;
+
     text-transform: uppercase;
     color: rgb(255, 255, 255);
+  }
+  @include for-size(tablet) {
+  }
+
+  @include for-size(desktop) {
+    height: 600px;
+
+    .hero-title {
+      font-size: 44px;
+      line-height: 60px;
+      padding-top: 200px;
+    }
   }
 }

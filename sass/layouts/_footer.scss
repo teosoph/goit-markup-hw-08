@@ -9,6 +9,7 @@ footer {
     /* Footer logo-contacts ============= */
     .footer__logo-contacts {
       display: inline-block;
+      margin-bottom: 60px;
 
       outline: 2px solid #0a66b1;
 
@@ -32,12 +33,12 @@ footer {
         @include fonts($font, normal, 14px, normal, 0.03em);
         color: $footer__address-text-color;
       }
-
-      margin-bottom: 60px;
     }
 
     /* Footer connections */
     .footer__connections {
+      margin-bottom: 60px;
+
       outline: 2px solid #bd9b07;
       p {
         display: block;
@@ -47,8 +48,6 @@ footer {
         text-transform: uppercase;
         color: $footer__conection-text-color;
       }
-
-      margin-bottom: 60px;
     }
 
     /* Footer subscription ===================  */
@@ -80,10 +79,21 @@ footer {
 
         margin-bottom: 20px;
         padding-left: 10px;
+
+        @include for-size(desktop) {
+          width: 358px;
+
+          margin-right: 12px;
+          padding-left: 10px;
+        }
       }
     }
 
     @include for-size(tablet) {
+      .footer_tablet {
+        display: flex;
+        justify-content: space-between;
+      }
     }
 
     @include for-size(desktop) {
@@ -100,7 +110,6 @@ footer {
         display: flex;
         align-items: center;
       }
-
       .footer__logo-contacts {
         .logo-link {
           justify-content: left;
@@ -113,19 +122,12 @@ footer {
       .footer__subscription-form {
         display: flex;
       }
-
       .footer__connections {
         margin-bottom: 0;
-      }
-      .footer__connections-socials {
-        margin-right: 94px;
-      }
 
-      input {
-        width: 358px;
-
-        margin-right: 12px;
-        padding-left: 10px;
+        .footer__connections-socials {
+          margin-right: 94px;
+        }
       }
     }
   }

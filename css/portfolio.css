@@ -265,10 +265,10 @@ footer .container {
 
 footer .container .footer__logo-contacts {
   display: inline-block;
+  margin-bottom: 60px;
   outline: 2px solid #0a66b1;
   /* logo ==================*/
   /* footer contacts ==================*/
-  margin-bottom: 60px;
 }
 
 footer .container .footer__logo-contacts .logo-link {
@@ -300,8 +300,8 @@ footer .container .footer__logo-contacts .footer__contacts-list-tel {
 }
 
 footer .container .footer__connections {
-  outline: 2px solid #bd9b07;
   margin-bottom: 60px;
+  outline: 2px solid #bd9b07;
 }
 
 footer .container .footer__connections p {
@@ -352,6 +352,21 @@ footer .container .footer__subscription input {
 }
 
 @media (min-width: 1200px) {
+  footer .container .footer__subscription input {
+    width: 358px;
+    margin-right: 12px;
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  footer .container .footer_tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1200px) {
   footer .container {
     display: flex;
     align-items: center;
@@ -379,19 +394,14 @@ footer .container .footer__subscription input {
   footer .container .footer__connections {
     margin-bottom: 0;
   }
-  footer .container .footer__connections-socials {
+  footer .container .footer__connections .footer__connections-socials {
     margin-right: 94px;
-  }
-  footer .container input {
-    width: 358px;
-    margin-right: 12px;
-    padding-left: 10px;
   }
 }
 
 .hero-button {
   position: absolute;
-  top: 350px;
+  top: 232px;
   left: 50%;
   transform: translateX(-50%);
   display: block;
@@ -415,6 +425,12 @@ footer .container .footer__subscription input {
 .hero-button:hover, .hero-button:focus {
   background-color: white;
   color: #2196f3;
+}
+
+@media (min-width: 1200px) {
+  .hero-button {
+    top: 350px;
+  }
 }
 
 /* Portfolio filter  ========================*/
