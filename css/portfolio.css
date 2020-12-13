@@ -24,14 +24,6 @@
   margin: 0;
 }
 
-*::before, *::after {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Roboto";
   font-style: normal;
@@ -76,11 +68,6 @@ img {
   font-weight: bold;
   letter-spacing: 0.03em;
   color: #212121;
-}
-
-section {
-  margin: 0 auto;
-  width: 100%;
 }
 
 .container {
@@ -374,15 +361,23 @@ footer .container .footer__subscription input {
     margin-left: auto;
     margin-right: auto;
   }
+  footer .container .footer_tablet {
+    display: flex;
+    align-items: center;
+  }
   footer .container .footer__logo-contacts {
     text-align: left;
     margin-right: 70px;
+    margin-bottom: 0;
   }
   footer .container .footer__logo-contacts .logo-link {
     justify-content: left;
   }
   footer .container .footer__subscription-form {
     display: flex;
+  }
+  footer .container .footer__connections {
+    margin-bottom: 0;
   }
   footer .container .footer__connections-socials {
     margin-right: 94px;
@@ -459,9 +454,11 @@ footer .container .footer__subscription input {
 
 /* Footer button ========================*/
 .footer__button-tosign {
-  display: inline-block;
+  display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   width: 200px;
   height: 50px;
   padding-left: 10px;

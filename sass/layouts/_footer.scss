@@ -96,6 +96,11 @@ footer {
       margin-left: auto;
       margin-right: auto;
 
+      .footer_tablet {
+        display: flex;
+        align-items: center;
+      }
+
       .footer__logo-contacts {
         .logo-link {
           justify-content: left;
@@ -103,9 +108,14 @@ footer {
 
         text-align: left;
         margin-right: 70px;
+        margin-bottom: 0;
       }
       .footer__subscription-form {
         display: flex;
+      }
+
+      .footer__connections {
+        margin-bottom: 0;
       }
       .footer__connections-socials {
         margin-right: 94px;

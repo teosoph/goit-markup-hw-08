@@ -63,10 +63,13 @@
 
 /* Footer button ========================*/
 .footer__button-tosign {
-  display: inline-block;
+  display: flex;
 
   align-items: center;
   justify-content: center;
+
+  margin-left: auto;
+  margin-right: auto;
 
   width: 200px;
   height: 50px;
