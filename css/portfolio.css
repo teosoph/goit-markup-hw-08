@@ -444,6 +444,40 @@ footer .container .footer__subscription input {
   }
 }
 
+@media (max-width: 767px) {
+  .header__menu-mobile {
+    display: none;
+    position: absolute;
+    top: 101%;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 393px;
+    background-color: white;
+    padding-top: 48px;
+    padding-bottom: 64px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__menu-mobile.is-open {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__menu-mobile {
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__menu-mobile {
+    width: 100%;
+  }
+}
+
 .header___menu-button {
   margin: 0;
   padding: 0;
