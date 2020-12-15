@@ -393,12 +393,8 @@ footer .container .footer__subscription .footer__subscription-form {
   vertical-align: middle;
 }
 
-footer .container .footer__subscription .footer__contact-form-section {
-  padding: 0;
-}
-
-footer .container .footer__subscription input {
-  width: 450px;
+footer .container .footer__subscription form input {
+  width: 100%;
   height: 50px;
   color: white;
   background: #2f303a;
@@ -410,7 +406,7 @@ footer .container .footer__subscription input {
 }
 
 @media (min-width: 1200px) {
-  footer .container .footer__subscription input {
+  footer .container .footer__subscription form input {
     width: 358px;
     margin-right: 12px;
     padding-left: 10px;
