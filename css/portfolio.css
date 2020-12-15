@@ -593,8 +593,21 @@ footer .container .footer__subscription input {
 
 .projects .buttons-filter {
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  flex-wrap: wrap;
   margin-bottom: 34px;
+}
+
+@media (min-width: 768px) {
+  .projects .buttons-filter {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects .buttons-filter {
+    justify-content: center;
+  }
 }
 
 .projects .buttons-filter li:not(:last-child) {

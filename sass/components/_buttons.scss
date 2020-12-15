@@ -87,8 +87,17 @@
 
   .buttons-filter {
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    flex-wrap: wrap;
     margin-bottom: 34px;
+
+    @include for-size(tablet) {
+      justify-content: center;
+    }
+
+    @include for-size(desktop) {
+      justify-content: center;
+    }
 
     li:not(:last-child) {
       margin-right: 8px;
