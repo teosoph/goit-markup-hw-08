@@ -622,6 +622,12 @@ footer .container .footer__subscription form input {
   padding-left: 10px;
 }
 
+@media (min-width: 768px) {
+  footer .container .footer__subscription form input {
+    width: 450px;
+  }
+}
+
 @media (min-width: 1200px) {
   footer .container .footer__subscription form input {
     width: 358px;
