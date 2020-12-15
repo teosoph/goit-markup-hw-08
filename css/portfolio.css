@@ -78,9 +78,9 @@ img {
   padding-right: 15px;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 320px) {
   .container {
-    width: 480px;
+    width: 320px;
   }
 }
 
@@ -126,7 +126,8 @@ header .container .header-address {
   flex-direction: column;
 }
 
-header .container .header-address .header-address-list li:hover, header .container .header-address .header-address-list li:focus {
+header .container .header-address .header-address-list li a:hover,
+header .container .header-address .header-address-list li a:focus {
   color: #2196f3;
 }
 
@@ -212,18 +213,40 @@ header .container .header-address .header-address-list .header-address-list__e-m
 }
 
 .projects-list li {
-  height: 404px;
-  margin-right: 30px;
-  margin-bottom: 30px;
   border: 1px solid #eeeeee;
+  width: 450px;
+  height: 404px;
 }
 
-.projects-list li:nth-child(3n) {
-  margin-right: 0;
+.projects-list li:not(:last-child) {
+  margin-bottom: 30px;
 }
 
-.projects-list li:nth-child(n + 7) {
-  margin-bottom: 0;
+@media (min-width: 768px) {
+  .projects-list li {
+    height: 440px;
+    width: 354px;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .projects-list li:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .projects-list li:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects-list li {
+    height: 404px;
+    width: 370px;
+    flex-basis: calc((100% - 30px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .projects-list li:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
 .projects-list .projects-list-item a {

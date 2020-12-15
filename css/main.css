@@ -78,9 +78,9 @@ img {
   padding-right: 15px;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 320px) {
   .container {
-    width: 480px;
+    width: 320px;
   }
 }
 
@@ -126,7 +126,8 @@ header .container .header-address {
   flex-direction: column;
 }
 
-header .container .header-address .header-address-list li:hover, header .container .header-address .header-address-list li:focus {
+header .container .header-address .header-address-list li a:hover,
+header .container .header-address .header-address-list li a:focus {
   color: #2196f3;
 }
 
